@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --config=webpack.development.config.js",
     "build": "yarn tsc && webpack --progress",
     "buildCi": "yarn tsc && webpack",
+    "prepare": "npm run buildCi",
     "start": "yarn tsc && npm run dev",
     "test": "yarn tsc && yarn jest",
     "testCi": "yarn tsc && yarn jest --reporters=default"
